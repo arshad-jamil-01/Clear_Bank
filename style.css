@@ -1,0 +1,104 @@
+
+@font-face{
+    font-family: clear1;
+    src:url(./ClearSansDisplayRegular.woff2)
+}
+
+@font-face{
+    font-family: clear2;
+    src:url(./ClearSansTextBold.woff2)
+}
+
+@font-face{
+    font-family: clear3;
+    src:url(./ClearSansTextRegular.woff2)
+}
+
+*{
+    font-family: clear1;
+    user-select: none;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.blur{
+    background-color:rgba(255, 255, 255, 0.491);
+    backdrop-filter:blur(5px) ;
+   
+}
+
+.parentscroll{
+    /* background-color: red ; */
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+#childscroll{
+    flex-shrink: 0;
+    /* background-color:lightseagreen; */
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-left: 40px;
+}
+
+#span span{
+    color: gray;
+}
+
+#ourproducts i{
+   opacity: 0;
+   transition: all ease 0.2s;
+}
+
+#ourproducts #icon:hover i{
+    opacity: 1;
+}
+
+
+.gredient{
+   background: linear-gradient(rgb(244, 5, 53), rgba(237, 5, 44, 0.47));
+   background-clip:text;
+   color: transparent;
+}
+
+
+
+.swiper {
+    width: 100%;
+    height: 50%;
+  }
+
+  .swiper-slide {
+   border: 1px solid black;
+   width: 100px;
+   height: 300px;
+   padding: 20px;
+   border-radius: 10px;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-start;
+   
+  }
+
+  .swiper-slide:hover{
+    background-color:#70F1DA;
+  } 
+
+  .swiper-slide:hover button{
+    background-color: white;
+  }
+
+  
+#footerimg{
+    background-image: url("CTA@2.webp");
+   background-position: center;
+   background-size: cover;
+  }
